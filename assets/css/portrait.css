@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* Em pé (portrait - retrato) */
+
+span.menu-icon {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 85%;
+}
+
+span.arrow-back {
+    top: 2%;
+    left: 5%;
+}
+
+nav.navbar {
+    width: 50%;
+    height: 100dvh;
+    margin-left: 50%;
+}
+
+div.apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.apresentation h1 {
+    font-size: 2rem;
+}
+
+div.apresentation h3 {
+    font-size: 1.2rem;
+}
+
+div.apresentation p {
+    margin: 0 10%;
+}
+
+img.img-perfil {
+    width: 40%;
+}
+
+/* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
+@media (min-width: 575.98px) { 
+    img.img-perfil {
+        width: 30%;
+    }
+
+    div.apresentation p {
+        margin: 0 12%;
+    }
+ }
+
+/* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
+@media (min-width: 767.98px) {
+    span.menu-icon {
+        margin-left: 90%;
+        font-size: 3rem;
+    }
+
+    div.apresentation h1,
+    nav.navbar h1 {
+        font-size: 2.5rem;
+    }
+    
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 1.8rem;
+    }
+
+    div.apresentation p {
+        font-size: 1.6em;
+        margin: 0 18%;
+    }
+
+    li.navbar-item a {
+        font-size: 1.6em;
+    }
+ }
+
+/* `lg` aplica-se a dispositivos médios (tablets, menos de 992px) */
+@media (min-width: 991.98px) {
+    span.menu-icon {
+        margin-left: 92%;
+        font-size: 4rem;
+    }
+
+    img.img-perfil {
+        width: 25%;
+    }
+
+    nav.navbar {
+        width: 35%;
+        margin-left: 65%;
+    }
+
+    div.apresentation h1,
+    nav.navbar h1 {
+        font-size: 2.8rem;
+    }
+    
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 2rem;
+    }
+
+    div.apresentation p,
+    li.navbar-item a {
+        font-size: 1.8em;
+    }
+ }
+
+/* `xxl` aplica-se a dispositivos extra-grandes (grandes desktops, menos de 1400px) */
+@media (min-width: 1399.98px) {
+    span.menu-icon {
+        margin-left: 95%;
+        font-size: 5rem;
+    }
+
+    img.img-perfil {
+        width: 25%;
+    }
+
+    div.apresentation h1,
+    nav.navbar h1 {
+        font-size: 3.8rem;
+    }
+    
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 3rem;
+    }
+
+    div.apresentation p,
+    li.navbar-item a {
+        font-size: 2.8em;
+    }
+ }
