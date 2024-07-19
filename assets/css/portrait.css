@@ -13,9 +13,9 @@ span.arrow-back {
 }
 
 nav.navbar {
-    width: 50%;
+    width: 55%;
     height: 100dvh;
-    margin-left: 50%;
+    margin-left: 45%;
 }
 
 div.apresentation {
@@ -25,8 +25,9 @@ div.apresentation {
     justify-content: center;
 }
 
-div.apresentation h1 {
-    font-size: 2rem;
+div.apresentation h1,
+section#objetive h1 {
+    font-size: 1.8rem;
 }
 
 div.apresentation h3 {
@@ -39,6 +40,31 @@ div.apresentation p {
 
 img.img-perfil {
     width: 40%;
+}
+
+section#objetive {
+    display: flex;
+    flex-direction: column;
+}
+
+section#objetive h1,
+section#objetive p {
+    margin: 5% 8%;
+}
+
+section#technology {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    width: 90%;
+    margin: 2vh auto;
+}
+
+video {
+    width: 90%;
+    height: auto;
 }
 
 /* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
@@ -60,7 +86,8 @@ img.img-perfil {
     }
 
     div.apresentation h1,
-    nav.navbar h1 {
+    nav.navbar h1,
+    section#objetive h1 {
         font-size: 2.5rem;
     }
     
@@ -69,13 +96,18 @@ img.img-perfil {
         font-size: 1.8rem;
     }
 
-    div.apresentation p {
+    div.apresentation p,
+    section#objetive p {
         font-size: 1.6em;
         margin: 0 18%;
     }
 
     li.navbar-item a {
         font-size: 1.6em;
+    }
+
+    video {
+        width: 80%;
     }
  }
 
@@ -91,12 +123,13 @@ img.img-perfil {
     }
 
     nav.navbar {
-        width: 35%;
-        margin-left: 65%;
+        width: 45%;
+        margin-left: 55%;
     }
 
     div.apresentation h1,
-    nav.navbar h1 {
+    nav.navbar h1,
+    section#objetive h1 {
         font-size: 2.8rem;
     }
     
@@ -106,8 +139,13 @@ img.img-perfil {
     }
 
     div.apresentation p,
-    li.navbar-item a {
+    li.navbar-item a,
+    section#objetive p {
         font-size: 1.8em;
+    }
+
+    video {
+        width: 70%;
     }
  }
 
@@ -123,7 +161,8 @@ img.img-perfil {
     }
 
     div.apresentation h1,
-    nav.navbar h1 {
+    nav.navbar h1,
+    section#objetive h1 {
         font-size: 3.8rem;
     }
     
@@ -133,7 +172,12 @@ img.img-perfil {
     }
 
     div.apresentation p,
-    li.navbar-item a {
+    li.navbar-item a,
+    section#objetive p {
         font-size: 2.8em;
+    }
+
+    video {
+        width: 60%;
     }
  }

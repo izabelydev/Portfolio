@@ -6,18 +6,22 @@
 :root {
     --black-df: #000000; 
     --red-df: #e53939;
+    --dark-red: #bb1a1a;
     --white-df: #ffffff;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
 body, html {
-    width: 100dvw;
+    width: 100vw;
     height: 100dvh;
+    background: var(--white-df);
+    overflow-x: hidden;
 }
 
 span.menu-icon {
@@ -32,15 +36,15 @@ span.arrow-back {
 
 nav.navbar {
     background: var(--white-df);
-    border-left: 1px solid var(--red-df);
-    position: absolute;
+    position: fixed;
     top: 0;
+    height: 100dvh;
     z-index: 1001;
     transition: transform .5s;
-    transform: translateX(100dvw);
-    height: 100dvh;
+    transform: translateX(100vw);
     padding-top: 10vh;
     padding-left: 5vh;
+    box-shadow: -7px 0px 12px 0px rgba(0,0,0,0.3);
 }
 
 nav.navbar.active {
@@ -93,4 +97,59 @@ img.img-perfil {
     border-radius: 50%;
     border: 4px solid var(--white-df);
     box-shadow: 4px 4px 15px 3px rgba(0,0,0,0.5);
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    padding: 10% 0;
+}
+
+section#technology {
+    background: var(--black-df);
+    color: var(--white-df);
+    width: 85%;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 20px;
+}
+
+section#technology .second-content,
+section#technology .third-content {
+    margin: 4vh 2vw 0;
+}
+
+ul.list-tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff94;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+    border: 1px solid var(--white-df);
+}
+
+ ul.list-tech > li {
+    width: 25%;
+    margin: 2vh 2vw;
+    list-style: none;
+ }
+
+ul.list-tech > li > img {
+    width: 100%;
+}
+
+input.btn-open-box-video {
+    color: var(--white-df);
+    width: 90%;
+    padding: 1% 0;
+    background: var(--red-df);
+    border-radius: 10px;
+    border: 1px solid var(--dark-red);
+    transition: all .5s;
+}
+
+input.btn-open-box-video:hover {
+    cursor: pointer;
+    background: var(--dark-red);
 }

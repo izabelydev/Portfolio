@@ -14,8 +14,8 @@ span.arrow-back {
 }
 
 nav.navbar {
-    width: 25%;
-    margin-left: 75%;
+    width: 30%;
+    margin-left: 70%;
 }
 
 div.apresentation {
@@ -24,7 +24,8 @@ div.apresentation {
     align-items: center;
 }
 
-div.apresentation h1 {
+div.apresentation h1,
+section#objetive h1 {
     font-size: 1rem;
 }
 
@@ -43,6 +44,39 @@ img.img-perfil {
     width: 40%;
 }
 
+section#objetive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#objetive h1 {
+    grid-column: span 2;
+}
+
+section#objetive h1,
+section#objetive p {
+    margin: 2% 8%;
+}
+
+section#technology {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#technology .first-content,
+section#technology .fourth-content {
+    grid-column: span 2;
+}
+
+ul {
+    width: 90%;
+    margin: 2vh auto;
+}
+
+video {
+    width: 60%;
+}
+
 /* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
 @media (min-width: 575.98px) {
     span.menu-icon {
@@ -51,7 +85,8 @@ img.img-perfil {
     }
 
     div.apresentation h1,
-    nav.navbar h1 {
+    nav.navbar h1,
+    section#objetive h1 {
         font-size: 1.2rem;
     }
     
@@ -61,7 +96,8 @@ img.img-perfil {
     }
 
     div.apresentation p,
-    li.navbar-item a {
+    li.navbar-item a,
+    section#objetive p {
         font-size: 0.9rem;
     }
  }
@@ -74,7 +110,8 @@ img.img-perfil {
     }
 
     div.apresentation h1,
-    nav.navbar h1 {
+    nav.navbar h1,
+    section#objetive h1 {
         font-size: 1.5rem;
     }
     
@@ -84,8 +121,13 @@ img.img-perfil {
     }
 
     div.apresentation p,
-    li.navbar-item a {
+    li.navbar-item a,
+    section#objetive p {
         font-size: 1rem;
+    }
+
+    video {
+        width: 70%;
     }
  }
 
@@ -97,7 +139,8 @@ img.img-perfil {
     }
 
     div.apresentation h1,
-    nav.navbar h1 {
+    nav.navbar h1,
+    section#objetive h1 {
         font-size: 1.8rem;
     }
     
@@ -107,7 +150,8 @@ img.img-perfil {
     }
 
     div.apresentation p,
-    li.navbar-item a {
+    li.navbar-item a,
+    section#objetive p {
         font-size: 1.3rem;
     }
  }
@@ -120,7 +164,8 @@ img.img-perfil {
     }
 
     div.apresentation h1,
-    nav.navbar h1 {
+    nav.navbar h1,
+    section#objetive h1 {
         font-size: 2.8rem;
     }
     
@@ -130,11 +175,16 @@ img.img-perfil {
     }
 
     div.apresentation p,
-    li.navbar-item a {
+    li.navbar-item a,
+    section#objetive p {
         font-size: 1.6rem;
     }
 
     img.img-perfil {
         width: 40%;
+    }
+
+    video {
+        width: 80%;
     }
  }
