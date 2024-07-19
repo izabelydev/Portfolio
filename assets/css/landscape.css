@@ -37,7 +37,8 @@ div.apresentation h3 {
 
 div.apresentation p {
     font-size: .6rem;
-    margin-right: 10%;
+    margin-left: -15%;
+    margin-right: 20%;
 }
 
 img.img-perfil {
@@ -100,6 +101,10 @@ video {
     section#objetive p {
         font-size: 0.9rem;
     }
+
+    span.close p {
+        width: 5%;
+    }
  }
 
 /* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
@@ -124,6 +129,10 @@ video {
     li.navbar-item a,
     section#objetive p {
         font-size: 1rem;
+    }
+
+    span.close p {
+        width: 4%;
     }
 
     video {
@@ -154,6 +163,12 @@ video {
     section#objetive p {
         font-size: 1.3rem;
     }
+
+    span.close p {
+        font-size: 1rem;
+        width: 3%;
+        padding: .8% 0;
+    }
  }
 
 /* `xxl` aplica-se a dispositivos extra-grandes (grandes desktops, menos de 1400px) */
@@ -182,6 +197,12 @@ video {
 
     img.img-perfil {
         width: 40%;
+    }
+
+    span.close p {
+        font-size: 1rem;
+        width: 2%;
+        padding: .5% 0;
     }
 
     video {

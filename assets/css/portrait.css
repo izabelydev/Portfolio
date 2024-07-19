@@ -76,6 +76,10 @@ video {
     div.apresentation p {
         margin: 0 12%;
     }
+
+    span.close p {
+        width: 5%;
+    }
  }
 
 /* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
@@ -104,6 +108,10 @@ video {
 
     li.navbar-item a {
         font-size: 1.6em;
+    }
+
+    span.close p {
+        width: 4%;
     }
 
     video {
@@ -144,6 +152,12 @@ video {
         font-size: 1.8em;
     }
 
+    span.close p {
+        font-size: 1rem;
+        width: 3%;
+        padding: .8% 0;
+    }
+
     video {
         width: 70%;
     }
@@ -175,6 +189,12 @@ video {
     li.navbar-item a,
     section#objetive p {
         font-size: 2.8em;
+    }
+
+    span.close p {
+        font-size: 1rem;
+        width: 2%;
+        padding: .5% 0;
     }
 
     video {

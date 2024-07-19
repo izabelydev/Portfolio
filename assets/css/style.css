@@ -75,7 +75,7 @@ li.navbar-item a:hover {
 
 div.apresentation {
     width: 100%;
-    height: 75%;
+    height: 72%;
     color: var(--white-df);
     text-align: center;
 }
@@ -152,4 +152,59 @@ input.btn-open-box-video {
 input.btn-open-box-video:hover {
     cursor: pointer;
     background: var(--dark-red);
+}
+
+div.wrapper-resume {
+    z-index: 1002;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+div.container-resume {
+    width: 85vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    border-radius: 10px;
+    background: var(--white-df);
+}
+
+span.close {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+span.close p {
+    position: absolute;
+    top: 5vh;
+    color: var(--white-df);
+    text-align: center;
+    font-weight: 600;
+    font-size: .8rem;
+    width: 7.5%;
+    padding: 1% 0;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: var(--red-df);
+}
+
+div.content-container {
+    width: 90%;
+    margin: 0 auto;
 }
