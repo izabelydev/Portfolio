@@ -22,11 +22,17 @@ body, html {
     height: 100dvh;
     background: var(--white-df);
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 span.menu-icon {
+    background: var(--dark-red);
+    padding: 1%;
+    border-radius: 50%;
+    position: fixed;
     cursor: pointer;
     color: var(--white-df);
+    z-index: 1001;
 }
 
 span.arrow-back {
@@ -75,7 +81,7 @@ li.navbar-item a:hover {
 
 div.apresentation {
     width: 100%;
-    height: 72%;
+    height: 90%;
     color: var(--white-df);
     text-align: center;
 }
@@ -171,8 +177,7 @@ div.wrapper-resume {
 }
 
 div.container-resume {
-    width: 85vw;
-    height: 90vh;
+    color: var(--black-df);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,8 +196,7 @@ span.close {
 }
 
 span.close p {
-    position: absolute;
-    top: 5vh;
+    position: relative;
     color: var(--white-df);
     text-align: center;
     font-weight: 600;
@@ -206,5 +210,10 @@ span.close p {
 
 div.content-container {
     width: 90%;
+    height: 95%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

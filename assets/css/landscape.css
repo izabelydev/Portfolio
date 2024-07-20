@@ -4,7 +4,7 @@
 span.menu-icon {
     font-size: 1rem;
     margin-top: 20px;
-    margin-left: 92%;
+    margin-left: 90%;
 }
 
 span.arrow-back {
@@ -22,6 +22,7 @@ div.apresentation {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-content: center;
 }
 
 div.apresentation h1,
@@ -45,17 +46,17 @@ img.img-perfil {
     width: 40%;
 }
 
-section#objetive {
+section#objective {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-section#objetive h1 {
+section#objective h1 {
     grid-column: span 2;
 }
 
-section#objetive h1,
-section#objetive p {
+section#objective h1,
+section#objective p {
     margin: 2% 8%;
 }
 
@@ -74,20 +75,25 @@ ul {
     margin: 2vh auto;
 }
 
+div.container-resume {
+    width: 85vw;
+    height: 90vh;
+}
+
 video {
-    width: 60%;
+    width: 50%;
 }
 
 /* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
 @media (min-width: 575.98px) {
     span.menu-icon {
-        margin-left: 90%;
+        margin-left: 87%;
         font-size: 1.5rem;
     }
 
     div.apresentation h1,
     nav.navbar h1,
-    section#objetive h1 {
+    section#objective h1 {
         font-size: 1.2rem;
     }
     
@@ -98,7 +104,7 @@ video {
 
     div.apresentation p,
     li.navbar-item a,
-    section#objetive p {
+    section#objective p {
         font-size: 0.9rem;
     }
 
@@ -110,13 +116,13 @@ video {
 /* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
 @media (min-width: 767.98px) {
     span.menu-icon {
-        margin-left: 92%;
+        margin-left: 90%;
         font-size: 1.7rem;
     }
 
     div.apresentation h1,
     nav.navbar h1,
-    section#objetive h1 {
+    section#objective h1 {
         font-size: 1.5rem;
     }
     
@@ -127,7 +133,7 @@ video {
 
     div.apresentation p,
     li.navbar-item a,
-    section#objetive p {
+    section#objective p {
         font-size: 1rem;
     }
 
@@ -135,21 +141,23 @@ video {
         width: 4%;
     }
 
-    video {
-        width: 70%;
+    video,
+    .content-container h3 {
+        width: 60%;
+        margin-bottom: 2%;
     }
  }
 
 /* `lg` aplica-se a dispositivos médios (tablets, menos de 992px) */
 @media (min-width: 991.98px) {
     span.menu-icon {
-        margin-left: 95%;
+        margin-left: 93%;
         font-size: 2rem;
     }
 
     div.apresentation h1,
     nav.navbar h1,
-    section#objetive h1 {
+    section#objective h1 {
         font-size: 1.8rem;
     }
     
@@ -160,7 +168,7 @@ video {
 
     div.apresentation p,
     li.navbar-item a,
-    section#objetive p {
+    section#objective p {
         font-size: 1.3rem;
     }
 
@@ -174,13 +182,13 @@ video {
 /* `xxl` aplica-se a dispositivos extra-grandes (grandes desktops, menos de 1400px) */
 @media (min-width: 1399.98px) {
     span.menu-icon {
-        margin-left: 95%;
+        margin-left: 93%;
         font-size: 3rem;
     }
 
     div.apresentation h1,
     nav.navbar h1,
-    section#objetive h1 {
+    section#objective h1 {
         font-size: 2.8rem;
     }
     
@@ -191,7 +199,7 @@ video {
 
     div.apresentation p,
     li.navbar-item a,
-    section#objetive p {
+    section#objective p {
         font-size: 1.6rem;
     }
 
@@ -205,7 +213,9 @@ video {
         padding: .5% 0;
     }
 
-    video {
-        width: 80%;
+    video,
+    .content-container h3 {
+        width: 70%;
+        margin-bottom: 2%;
     }
  }

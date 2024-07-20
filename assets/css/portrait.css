@@ -4,7 +4,7 @@
 span.menu-icon {
     font-size: 2rem;
     margin-top: 20px;
-    margin-left: 85%;
+    margin-left: 83%;
 }
 
 span.arrow-back {
@@ -26,7 +26,7 @@ div.apresentation {
 }
 
 div.apresentation h1,
-section#objetive h1 {
+section#objective h1 {
     font-size: 1.8rem;
 }
 
@@ -42,13 +42,13 @@ img.img-perfil {
     width: 40%;
 }
 
-section#objetive {
+section#objective {
     display: flex;
     flex-direction: column;
 }
 
-section#objetive h1,
-section#objetive p {
+section#objective h1,
+section#objective p {
     margin: 5% 8%;
 }
 
@@ -60,6 +60,11 @@ section#technology {
 ul {
     width: 90%;
     margin: 2vh auto;
+}
+
+div.container-resume {
+    width: 85vw;
+    height: 50vh;
 }
 
 video {
@@ -85,13 +90,13 @@ video {
 /* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
 @media (min-width: 767.98px) {
     span.menu-icon {
-        margin-left: 90%;
+        margin-left: 87%;
         font-size: 3rem;
     }
 
     div.apresentation h1,
     nav.navbar h1,
-    section#objetive h1 {
+    section#objective h1 {
         font-size: 2.5rem;
     }
     
@@ -101,7 +106,7 @@ video {
     }
 
     div.apresentation p,
-    section#objetive p {
+    section#objective p {
         font-size: 1.6em;
         margin: 0 18%;
     }
@@ -114,15 +119,17 @@ video {
         width: 4%;
     }
 
-    video {
+    video,
+    .content-container h3 {
         width: 80%;
+        margin-bottom: 2%;
     }
  }
 
 /* `lg` aplica-se a dispositivos médios (tablets, menos de 992px) */
 @media (min-width: 991.98px) {
     span.menu-icon {
-        margin-left: 92%;
+        margin-left: 90%;
         font-size: 4rem;
     }
 
@@ -137,7 +144,7 @@ video {
 
     div.apresentation h1,
     nav.navbar h1,
-    section#objetive h1 {
+    section#objective h1 {
         font-size: 2.8rem;
     }
     
@@ -148,7 +155,7 @@ video {
 
     div.apresentation p,
     li.navbar-item a,
-    section#objetive p {
+    section#objective p {
         font-size: 1.8em;
     }
 
@@ -158,15 +165,17 @@ video {
         padding: .8% 0;
     }
 
-    video {
+    video,
+    .content-container h3 {
         width: 70%;
+        margin-bottom: 2%;
     }
  }
 
 /* `xxl` aplica-se a dispositivos extra-grandes (grandes desktops, menos de 1400px) */
 @media (min-width: 1399.98px) {
     span.menu-icon {
-        margin-left: 95%;
+        margin-left: 93%;
         font-size: 5rem;
     }
 
@@ -176,7 +185,7 @@ video {
 
     div.apresentation h1,
     nav.navbar h1,
-    section#objetive h1 {
+    section#objective h1 {
         font-size: 3.8rem;
     }
     
@@ -187,7 +196,7 @@ video {
 
     div.apresentation p,
     li.navbar-item a,
-    section#objetive p {
+    section#objective p {
         font-size: 2.8em;
     }
 
@@ -197,7 +206,9 @@ video {
         padding: .5% 0;
     }
 
-    video {
+    video,
+    .content-container h3 {
         width: 60%;
+        margin-bottom: 2%;
     }
  }
