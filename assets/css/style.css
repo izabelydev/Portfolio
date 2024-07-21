@@ -6,7 +6,7 @@
 :root {
     --black-df: #000000; 
     --red-df: #e53939;
-    --dark-red: #bb1a1a;
+    --dark-red: #b92424;
     --white-df: #ffffff;
 }
 
@@ -26,7 +26,7 @@ body, html {
 }
 
 span.menu-icon {
-    background: var(--dark-red);
+    background: var(--red-df);
     padding: 1%;
     border-radius: 50%;
     position: fixed;
@@ -147,6 +147,7 @@ ul.list-tech > li > img {
 
 input.btn-open-box-video {
     color: var(--white-df);
+    font-size: 1em;
     width: 90%;
     padding: 1% 0;
     background: var(--red-df);

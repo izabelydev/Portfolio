@@ -1,17 +1,24 @@
+section#certificates h1,
+section#certificates p {
+    margin: 0 15%;
+}
+
 div.slider {
     position: relative;
-    margin: 0 auto 0 12%;
+    margin: 0 auto;
     width: 75%;
-    height: 90vh;
+    height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+
 div.slides {
     width: 400%;
-    margin: 15% 0;
+    margin-top: 5%;
+    margin-bottom: 18%;
     display: flex;
 }
 
@@ -35,33 +42,33 @@ div.navigation-auto div:not(:last-child) {
 }
 
 label.manual-btn:hover,
-input#radio1:checked ~ div.navigation-auto .auto-btn1,
-input#radio2:checked ~ div.navigation-auto .auto-btn2,
-input#radio3:checked ~ div.navigation-auto .auto-btn3,
-input#radio4:checked ~ div.navigation-auto .auto-btn4 {
+input#radio1:checked~div.navigation-auto .auto-btn1,
+input#radio2:checked~div.navigation-auto .auto-btn2,
+input#radio3:checked~div.navigation-auto .auto-btn3,
+input#radio4:checked~div.navigation-auto .auto-btn4 {
     background: var(--red-df);
 }
 
-input#radio1:checked ~ .first {
+input#radio1:checked~.first {
     margin-left: 0;
 }
 
-input#radio2:checked ~ .first {
+input#radio2:checked~.first {
     margin-left: -25%;
 }
 
-input#radio3:checked ~ .first {
+input#radio3:checked~.first {
     margin-left: -50%;
 }
 
-input#radio4:checked ~ .first {
+input#radio4:checked~.first {
     margin-left: -75%;
 }
 
 div.manual-navigation,
 div.navigation-auto {
     position: absolute;
-    bottom: 33%;
+    bottom: 5%;
     background: transparent;
     width: 100%;
     display: flex;
@@ -75,4 +82,12 @@ div.navigation-auto div {
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+}
+
+
+/* LANDSCAPE - PAISAGEM */
+@media screen and (orientation: landscape) {
+    div.slider {
+        width: 40%;
+    }
 }
