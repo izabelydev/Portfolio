@@ -58,6 +58,11 @@ nav.navbar.active {
     transform: translateX(0);
 }
 
+li.navbar-item.disabled a {
+    pointer-events: none;
+    color: grey;
+}
+
 li.navbar-item {
     width: 70%;
     margin-top: 1vh;
