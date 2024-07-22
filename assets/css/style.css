@@ -152,7 +152,7 @@ ul.list-tech > li > img {
 
 input.btn-open-box-video {
     color: var(--white-df);
-    font-size: .7em;
+    font-size: 1.1em;
     width: 90%;
     padding: 1% 0;
     background: var(--red-df);

@@ -27,7 +27,7 @@ openBoxVideo.addEventListener('click', () => {
                 <div class="container-resume">
                     <span class="close"><p>X</p></span>
                     <div class="content-container">
-                        <p>No vídeo abaixo, vou te explicar o que me motivou a estudar Desenvolvimento Web, por que escolhi HTML, CSS, JS, TS e Angular e quais as próximas tecnologias que pretendo estudar.</p>
+                        <p>No vídeo abaixo, vou te explicar o que me motivou a estudar Desenvolvimento Web, por que escolhi HTML, CSS, JS, Git, TS e Angular e quais as próximas tecnologias que pretendo estudar.</p>
                         <video autoplay controls>
                             <source src="./assets/video/tecnologias.mp4" type="video/mp4">
                         </video>
