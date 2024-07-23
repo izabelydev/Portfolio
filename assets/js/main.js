@@ -5,7 +5,7 @@ const tech = document.querySelector('#technology');
 const openBoxVideo = document.querySelector('.btn-open-box-video');
 const a = document.getElementsByClassName('item');
 
-alert('Esse projeto ainda não está 100% finalizado!');
+// alert('Esse projeto ainda não está 100% finalizado!');
 
 btnOpenMenu.addEventListener('click', () => {
     menu.classList.add('active');

@@ -25,6 +25,7 @@ div.apresentation {
     justify-content: center;
 }
 
+h1,
 div.apresentation h1,
 section#objetive h1 {
     font-size: 1rem;
@@ -85,6 +86,10 @@ video {
     margin-top: 4%;
 }
 
+div.project {
+    grid-template-columns: 28% 71%;
+}
+
 /* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
 @media (min-width: 575.98px) {
     span.menu-icon {
@@ -92,6 +97,7 @@ video {
         font-size: 1.5rem;
     }
 
+    h1,
     div.apresentation h1,
     nav.navbar h1,
     section#objective h1,
@@ -107,12 +113,24 @@ video {
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
-    section#certificates p {
+    div.projects-container p {
         font-size: 0.9rem;
     }
 
     span.close p {
         width: 5%;
+    }
+
+    div.projects {
+        width: 80%;
+    }
+
+    a.title-project {
+        font-size: 1.2rem;
+    }
+
+    p.description-project {
+        font-size: 1rem;
     }
  }
 
@@ -123,10 +141,12 @@ video {
         font-size: 1.7rem;
     }
 
+    h1,
     div.apresentation h1,
     nav.navbar h1,
     section#objective h1,
-    section#certificates h1 {
+    section#certificates h1,
+    section#projects h1 {
         font-size: 1.5rem;
     }
     
@@ -138,7 +158,8 @@ video {
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
-    section#certificates p {
+    div.projects-container p,
+    div.projects-container p {
         font-size: 1rem;
     }
 
@@ -151,6 +172,10 @@ video {
         width: 60%;
         margin-bottom: 2%;
     }
+
+    div.projects {
+        width: 50%;
+    }
  }
 
 /* `lg` aplica-se a dispositivos médios (tablets, menos de 992px) */
@@ -160,10 +185,12 @@ video {
         font-size: 2rem;
     }
 
+    h1,
     div.apresentation h1,
     nav.navbar h1,
     section#objective h1,
-    section#certificates h1 {
+    section#certificates h1,
+    section#projects h1 {
         font-size: 1.8rem;
     }
     
@@ -175,7 +202,8 @@ video {
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
-    section#certificates p {
+    div.projects-container p,
+    div.projects-container p {
         font-size: 1.3rem;
     }
 
@@ -183,6 +211,10 @@ video {
         font-size: 1rem;
         width: 3%;
         padding: .8% 0;
+    }
+
+    div.projects {
+        width: 40%;
     }
  }
 
@@ -193,10 +225,12 @@ video {
         font-size: 3rem;
     }
 
+    h1,
     div.apresentation h1,
     nav.navbar h1,
     section#objective h1,
-    section#certificates h1 {
+    section#certificates h1,
+    section#projects h1 {
         font-size: 2.8rem;
     }
     
@@ -208,7 +242,8 @@ video {
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
-    section#certificates p {
+    div.projects-container p,
+    div.projects-container p {
         font-size: 1.6rem;
     }
 
@@ -226,5 +261,9 @@ video {
     .content-container h3 {
         width: 70%;
         margin-bottom: 2%;
+    }
+
+    div.projects {
+        width: 30%;
     }
  }

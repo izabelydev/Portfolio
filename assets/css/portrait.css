@@ -72,6 +72,18 @@ video {
     margin-top: 4%;
 }
 
+div.projects {
+    width: 98%;
+}
+
+div.project {
+    grid-template-columns: 28% 69%;
+}
+
+p.description-project {
+    font-size: .7rem;
+}
+
 /* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
 @media (min-width: 575.98px) { 
     img.img-perfil {
@@ -85,6 +97,19 @@ video {
     span.close p {
         width: 5%;
     }
+
+    div.projects {
+        width: 80%;
+    }
+
+    a.title-project {
+        font-size: 1.2rem;
+    }
+
+    p.description-project {
+        font-size: 1rem;
+    }
+
  }
 
 /* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
@@ -94,10 +119,12 @@ video {
         font-size: 3rem;
     }
 
+    h1,
     div.apresentation h1,
     nav.navbar h1,
     section#objective h1,
-    section#certificates h1 {
+    section#certificates h1,
+    section#projects h1 {
         font-size: 2.5rem;
     }
     
@@ -113,6 +140,11 @@ video {
         margin: 0 18%;
     }
 
+    p {
+        font-size: 1.6em;
+        margin: 0;
+    }
+
     li.navbar-item a {
         font-size: 1.6em;
     }
@@ -125,6 +157,18 @@ video {
     .content-container h3 {
         width: 70%;
         margin-bottom: 2%;
+    }
+
+    div.projects {
+        width: 80%;
+    }
+
+    a.title-project {
+        font-size: 1.4rem;
+    }
+
+    p.description-project {
+        font-size: 1.3rem;
     }
  }
 
@@ -144,10 +188,12 @@ video {
         margin-left: 55%;
     }
 
+    h1,
     div.apresentation h1,
     nav.navbar h1,
     section#objective h1,
-    section#certificates h1 {
+    section#certificates h1,
+    section#projects h1 {
         font-size: 2.8rem;
     }
     
@@ -156,10 +202,12 @@ video {
         font-size: 2rem;
     }
 
+    p,
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
-    section#certificates p {
+    section#certificates p,
+    div.projects-container p {
         font-size: 1.8em;
     }
 
@@ -174,6 +222,18 @@ video {
         width: 60%;
         margin-bottom: 2%;
     }
+
+    div.projects {
+        width: 70%;
+    }
+
+    a.title-project {
+        font-size: 1.8rem;
+    }
+
+    p.description-project {
+        font-size: 1.6rem;
+    }
  }
 
 /* `xxl` aplica-se a dispositivos extra-grandes (grandes desktops, menos de 1400px) */
@@ -187,10 +247,12 @@ video {
         width: 25%;
     }
 
+    h1,
     div.apresentation h1,
     nav.navbar h1,
     section#objective h1,
-    section#certificates h1 {
+    section#certificates h1,
+    section#projects h1 {
         font-size: 3.8rem;
     }
     
@@ -199,10 +261,12 @@ video {
         font-size: 3rem;
     }
 
+    p,
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
-    section#certificates p {
+    section#certificates p,
+    div.projects-container p {
         font-size: 2.8em;
     }
 

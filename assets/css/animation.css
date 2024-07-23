@@ -13,14 +13,17 @@
 }
 
 header {
+    height: 100dvh;
+}
+
+header, section#projects {
     position: relative;
     width: 100dvw;
-    height: 100dvh;
     background: var(--red-df);
     overflow: hidden;
 }
 
-header div.wave {
+div.wave {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -29,7 +32,7 @@ header div.wave {
     background-size: 100vw 100px;
 }
 
-header div.wave.wave1 {
+div.wave.wave1 {
     animation: animate 30s linear infinite;
     z-index: 1000;
     opacity: 1;
@@ -37,7 +40,7 @@ header div.wave.wave1 {
     bottom: 0;
 }
 
-header div.wave.wave2 {
+div.wave.wave2 {
     animation: animate2 15s linear infinite;
     z-index: 999;
     opacity: 0.7;
@@ -45,7 +48,7 @@ header div.wave.wave2 {
     bottom: 0;
 }
 
-header div.wave.wave3 {
+div.wave.wave3 {
     animation: animate 30s linear infinite;
     z-index: 998;
     opacity: 0.5;
@@ -53,7 +56,7 @@ header div.wave.wave3 {
     bottom: 0;
 }
 
-header div.wave.wave4 {
+div.wave.wave4 {
     animation: animate2 15s linear infinite;
     z-index: 997;
     opacity: 0.3;
