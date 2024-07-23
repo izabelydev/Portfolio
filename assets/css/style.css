@@ -24,6 +24,7 @@ body {
     background: var(--white-df);
     overflow-x: hidden;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 span.menu-icon {
