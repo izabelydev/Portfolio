@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* Deitado (landscape - paisagem) */
 
+/* Estilos do menu */
 span.menu-icon {
     font-size: 1rem;
     margin-top: 20px;
@@ -18,6 +18,7 @@ nav.navbar {
     margin-left: 70%;
 }
 
+/* Estilos da seção inicial apresentação */
 div.apresentation {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,7 +28,7 @@ div.apresentation {
 
 h1,
 div.apresentation h1,
-section#objetive h1 {
+section#objective h1 {
     font-size: 1rem;
 }
 
@@ -38,7 +39,7 @@ div.apresentation h3 {
 }
 
 div.apresentation p {
-    font-size: .6rem;
+    font-size: 0.6rem;
     margin-left: -15%;
     margin-right: 20%;
 }
@@ -47,6 +48,7 @@ img.img-perfil {
     width: 40%;
 }
 
+/* Estilos da seção objetivo */
 section#objective {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -61,6 +63,12 @@ section#objective p {
     margin: 2% 8%;
 }
 
+/* Estilos da seção tecnologias */
+video {
+    width: 50%;
+    margin-top: 4%;
+}
+
 section#technology {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -71,26 +79,17 @@ section#technology .fourth-content {
     grid-column: span 2;
 }
 
-ul {
-    width: 90%;
-    margin: 2vh auto;
-}
-
 div.container-resume {
     width: 85vw;
     height: 90vh;
 }
 
-video {
-    width: 50%;
-    margin-top: 4%;
-}
-
+/* Estilos da seção projetos */
 div.project {
     grid-template-columns: 28% 71%;
 }
 
-/* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
+/* Media Queries */
 @media (min-width: 575.98px) {
     span.menu-icon {
         margin-left: 87%;
@@ -110,6 +109,7 @@ div.project {
         font-size: 1rem;
     }
 
+    p,
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
@@ -134,7 +134,6 @@ div.project {
     }
  }
 
-/* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
 @media (min-width: 767.98px) {
     span.menu-icon {
         margin-left: 90%;
@@ -155,10 +154,10 @@ div.project {
         font-size: 1.2rem;
     }
 
+    p,
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
-    div.projects-container p,
     div.projects-container p {
         font-size: 1rem;
     }
@@ -178,7 +177,6 @@ div.project {
     }
  }
 
-/* `lg` aplica-se a dispositivos médios (tablets, menos de 992px) */
 @media (min-width: 991.98px) {
     span.menu-icon {
         margin-left: 93%;
@@ -199,10 +197,10 @@ div.project {
         font-size: 1.4rem;
     }
 
+    p,
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
-    div.projects-container p,
     div.projects-container p {
         font-size: 1.3rem;
     }
@@ -218,7 +216,6 @@ div.project {
     }
  }
 
-/* `xxl` aplica-se a dispositivos extra-grandes (grandes desktops, menos de 1400px) */
 @media (min-width: 1399.98px) {
     span.menu-icon {
         margin-left: 93%;
@@ -238,11 +235,11 @@ div.project {
     span.arrow-back {
         font-size: 2.2rem;
     }
-
+    
+    p,
     div.apresentation p,
     li.navbar-item a,
     section#objective p,
-    div.projects-container p,
     div.projects-container p {
         font-size: 1.6rem;
     }

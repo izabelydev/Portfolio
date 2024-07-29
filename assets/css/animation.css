@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-/* Animações */
-
+/* Animações para abertura e fechamento de elementos */
 .on {
     opacity: 1;
     transition: opacity .5s;
@@ -12,17 +11,7 @@
     transition: opacity .5s;
 }
 
-header {
-    height: 100dvh;
-}
-
-header, section#projects {
-    position: relative;
-    width: 100dvw;
-    background: var(--red-df);
-    overflow: hidden;
-}
-
+/* Animações das ondas no header e na section#projects */
 div.wave {
     position: absolute;
     bottom: 0;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* Em pé (portrait - retrato) */
 
+/* Estilos do menu */
 span.menu-icon {
     font-size: 2rem;
     margin-top: 20px;
@@ -18,6 +18,7 @@ nav.navbar {
     margin-left: 45%;
 }
 
+/* Estilos da seção inicial apresentação */
 div.apresentation {
     display: flex;
     flex-direction: column;
@@ -42,6 +43,7 @@ img.img-perfil {
     width: 40%;
 }
 
+/* Estilos da seção objetivo */
 section#objective {
     display: flex;
     flex-direction: column;
@@ -52,14 +54,16 @@ section#objective p {
     margin: 5% 8%;
 }
 
-section#technology {
-    display: flex;
-    flex-direction: column;
+/* Estilos da seção tecnologias */
+video {
+    width: 80%;
+    margin-top: 4%;
 }
 
-ul {
-    width: 90%;
-    margin: 2vh auto;
+section#technology,
+section#projects {
+    display: flex;
+    flex-direction: column;
 }
 
 div.container-resume {
@@ -67,11 +71,8 @@ div.container-resume {
     height: 50vh;
 }
 
-video {
-    width: 80%;
-    margin-top: 4%;
-}
 
+/* Estilos seção projetos */
 div.projects {
     width: 98%;
 }
@@ -84,8 +85,8 @@ p.description-project {
     font-size: .7rem;
 }
 
-/* `sm` aplica-se a dispositivos extra-pequenos (telefones em retrato, menos de 576px) */
-@media (min-width: 575.98px) { 
+/* Media Queries */
+@media (min-width: 575.98px) {
     img.img-perfil {
         width: 30%;
     }
@@ -101,18 +102,8 @@ p.description-project {
     div.projects {
         width: 80%;
     }
+}
 
-    a.title-project {
-        font-size: 1.2rem;
-    }
-
-    p.description-project {
-        font-size: 1rem;
-    }
-
- }
-
-/* `md` aplica-se a dispositivos pequenos (telefones em paisagem, menos de 768px) */
 @media (min-width: 767.98px) {
     span.menu-icon {
         margin-left: 87%;
@@ -127,7 +118,7 @@ p.description-project {
     section#projects h1 {
         font-size: 2.5rem;
     }
-    
+
     div.apresentation h3,
     span.arrow-back {
         font-size: 1.8rem;
@@ -137,7 +128,7 @@ p.description-project {
     section#objective p,
     section#certificates p {
         font-size: 1.6em;
-        margin: 0 18%;
+        margin: 2% 18%;
     }
 
     p {
@@ -153,8 +144,7 @@ p.description-project {
         width: 4%;
     }
 
-    video,
-    .content-container h3 {
+    video {
         width: 70%;
         margin-bottom: 2%;
     }
@@ -162,17 +152,8 @@ p.description-project {
     div.projects {
         width: 80%;
     }
+}
 
-    a.title-project {
-        font-size: 1.4rem;
-    }
-
-    p.description-project {
-        font-size: 1.3rem;
-    }
- }
-
-/* `lg` aplica-se a dispositivos médios (tablets, menos de 992px) */
 @media (min-width: 991.98px) {
     span.menu-icon {
         margin-left: 90%;
@@ -196,7 +177,7 @@ p.description-project {
     section#projects h1 {
         font-size: 2.8rem;
     }
-    
+
     div.apresentation h3,
     span.arrow-back {
         font-size: 2rem;
@@ -226,17 +207,8 @@ p.description-project {
     div.projects {
         width: 70%;
     }
+}
 
-    a.title-project {
-        font-size: 1.8rem;
-    }
-
-    p.description-project {
-        font-size: 1.6rem;
-    }
- }
-
-/* `xxl` aplica-se a dispositivos extra-grandes (grandes desktops, menos de 1400px) */
 @media (min-width: 1399.98px) {
     span.menu-icon {
         margin-left: 93%;
@@ -255,7 +227,7 @@ p.description-project {
     section#projects h1 {
         font-size: 3.8rem;
     }
-    
+
     div.apresentation h3,
     span.arrow-back {
         font-size: 3rem;
@@ -281,4 +253,4 @@ p.description-project {
         width: 50%;
         margin-bottom: 2%;
     }
- }
+}

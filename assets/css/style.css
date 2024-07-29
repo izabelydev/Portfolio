@@ -3,30 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-    --black-df: #000000; 
-    --red-df: #e53939;
-    --dark-red: #b92424;
-    --white-df: #ffffff;
-    --light-white: #ffffff69;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-body, html {
-    width: 100dvw;
-    height: 100dvh;
-    background: var(--white-df);
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-
+/* Estilos do menu */
 span.menu-icon {
     background: var(--red-df);
     padding: 1%;
@@ -37,9 +14,9 @@ span.menu-icon {
     z-index: 1001;
 }
 
-span.arrow-back {
+span.arrow-back,
+nav.navbar.active {
     cursor: pointer;
-    position: absolute;
 }
 
 nav.navbar {
@@ -56,24 +33,19 @@ nav.navbar {
 }
 
 nav.navbar.active {
-    transition: transform .5s;
     transform: translateX(0);
 }
-
 
 li.navbar-item {
     width: 70%;
     margin-top: 1vh;
-}
-
-li.navbar-item {
     list-style: none;
 }
 
 li.navbar-item a {
     color: var(--black-df);
     text-decoration: none;
-    transition: all.5s;
+    transition: all .5s;
     border-bottom: 2px solid transparent;
 }
 
@@ -87,6 +59,7 @@ li.navbar-item.disabled a {
     color: grey;
 }
 
+/* Estilos da seção inicial apresentação */
 div.apresentation {
     width: 100%;
     height: 90%;
@@ -113,12 +86,7 @@ img.img-perfil {
     box-shadow: 4px 4px 15px 3px rgba(0,0,0,0.5);
 }
 
-section {
-    text-align: center;
-    width: 100%;
-    padding: 10% 0;
-}
-
+/* Estilos da seção tecnologias */
 section#technology {
     background: var(--black-df);
     color: var(--white-df);
@@ -128,9 +96,13 @@ section#technology {
     border-radius: 20px;
 }
 
-section#technology .second-content,
-section#technology .third-content {
-    margin: 4vh 2vw 0;
+h3.tech-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+div.first-content {
+    margin-bottom: 5%;
 }
 
 ul.list-tech {
@@ -143,11 +115,11 @@ ul.list-tech {
     border: 1px solid var(--white-df);
 }
 
- ul.list-tech > li {
+ul.list-tech > li {
     width: 25%;
     margin: 2vh 2vw;
     list-style: none;
- }
+}
 
 ul.list-tech > li > img {
     width: 100%;
@@ -155,7 +127,7 @@ ul.list-tech > li > img {
 
 input.btn-open-box-video {
     color: var(--white-df);
-    font-size: 1em;
+    font-size: 1.1em;
     width: 90%;
     padding: 1% 0;
     background: var(--red-df);
@@ -169,6 +141,7 @@ input.btn-open-box-video:hover {
     background: var(--dark-red);
 }
 
+/* Estilos da caixa do vídeo */
 div.wrapper-resume {
     z-index: 1002;
     position: fixed;
@@ -227,6 +200,13 @@ div.content-container {
     justify-content: center;
 }
 
+/* Estilos da seção certificados */
+section#certificates h1,
+section#certificates p {
+    margin: 0 15%;
+}
+
+/* Estilos da seção projetos */
 section#projects {
     background: var(--red-df);
     color: var(--white-df);
@@ -237,41 +217,36 @@ section#projects {
 }
 
 div.projects-wrapper {
-    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.projects-container,
+div.project {
+    margin: 2% 5%;
 }
 
 div.projects {
-    margin: 0 auto;
     border-radius: 10px;
     border: 1px solid var(--dark-red);
     background: var(--light-white);
     height: 60vh;
+    margin: 0 auto;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-div.projects-container {
-    margin-bottom: 2vh;
-    padding-left: 17%;
-    padding-right: 17%;
-}
-
 div.project {
-    display: grid;
-    margin: auto;
-    margin-top: 2vh;
     text-align: left;
-    gap: 10px;
-    overflow: hidden;
     background: var(--white-df);
     border-radius: 10px;
     width: 93%;
     padding: 2%;
-    grid-template-columns: 32% 69%;
-}
-
-div.project:last-child {
-    margin-bottom: 2vh;
+    margin: 1.5% auto;
+    display: grid;
+    gap: 10px;
 }
 
 div.project img {
@@ -297,16 +272,7 @@ p.description-project {
     color: var(--black-df);
 }
 
-footer {
-    width: 100%;
-    height: 50vh;
-    background: var(--white-df);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
+/* Estilos dos elementos do footer */
 span.email-content,
 span.linkedin-content {
     margin-bottom: 1vh;
@@ -319,17 +285,4 @@ img.mail-lg,
 img.linkedin-lg {
     width: 4%;
     margin-right: 1vw;
-}
-
-footer > span > a {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--black-df);
-    transition: 0.5s;
-    border-bottom: 2px solid transparent;
-}
-
-footer > span > a:hover {
-    cursor: pointer;
-    border-bottom: 2px solid var(--dark-red);
 }
