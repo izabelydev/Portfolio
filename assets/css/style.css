@@ -36,6 +36,10 @@ nav.navbar.active {
     transform: translateX(0);
 }
 
+nav.navbar > h1 {
+    text-align: left;
+}
+
 li.navbar-item {
     width: 70%;
     margin-top: 1vh;
