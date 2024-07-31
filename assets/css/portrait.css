@@ -55,11 +55,6 @@ section#objective p {
 }
 
 /* Estilos da seção tecnologias */
-video {
-    width: 80%;
-    margin-top: 4%;
-}
-
 section#technology,
 section#projects {
     display: flex;
@@ -95,7 +90,7 @@ p.description-project {
         margin: 0 12%;
     }
 
-    span.close p {
+    span.close a {
         width: 5%;
     }
 
@@ -140,13 +135,8 @@ p.description-project {
         font-size: 1.6em;
     }
 
-    span.close p {
+    span.close a {
         width: 4%;
-    }
-
-    video {
-        width: 70%;
-        margin-bottom: 2%;
     }
 
     div.projects {
@@ -192,13 +182,12 @@ p.description-project {
         font-size: 1.8em;
     }
 
-    span.close p {
+    span.close a {
         font-size: 1rem;
         width: 3%;
         padding: .8% 0;
     }
 
-    video,
     .content-container h3 {
         width: 60%;
         margin-bottom: 2%;
@@ -242,13 +231,12 @@ p.description-project {
         font-size: 2.8em;
     }
 
-    span.close p {
+    span.close a {
         font-size: 1rem;
         width: 2%;
         padding: .5% 0;
     }
 
-    video,
     .content-container h3 {
         width: 50%;
         margin-bottom: 2%;

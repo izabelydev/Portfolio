@@ -86,6 +86,15 @@ img.img-perfil {
     box-shadow: 4px 4px 15px 3px rgba(0,0,0,0.5);
 }
 
+div.apresentation p,
+section#objective p {
+    text-align: justify;
+}
+
+section#objective p {
+    text-indent: 50px;
+}
+
 /* Estilos da seção tecnologias */
 section#technology {
     background: var(--black-df);
@@ -125,26 +134,26 @@ ul.list-tech > li > img {
     width: 100%;
 }
 
-input.btn-open-box-video {
+input.btn-open-box {
     color: var(--white-df);
     font-size: 1.1em;
-    width: 90%;
-    padding: 1% 0;
+    width: auto;
+    padding: 1.5% 3%;
     background: var(--red-df);
     border-radius: 10px;
     border: 1px solid var(--dark-red);
     transition: all .5s;
 }
 
-input.btn-open-box-video:hover {
+input.btn-open-box:hover {
     cursor: pointer;
     background: var(--dark-red);
 }
 
-/* Estilos da caixa do vídeo */
+/* Estilos da caixa de conteúdo gostos pessoais */
 div.wrapper-resume {
-    z-index: 1002;
     position: fixed;
+    z-index: 1002;
     width: 100%;
     height: 100dvh;
     top: 0;
@@ -177,7 +186,7 @@ span.close {
     align-items: flex-start;
 }
 
-span.close p {
+span.close a {
     position: relative;
     color: var(--white-df);
     text-align: center;
@@ -200,10 +209,9 @@ div.content-container {
     justify-content: center;
 }
 
-/* Estilos da seção certificados */
-section#certificates h1,
-section#certificates p {
-    margin: 0 15%;
+/* Estilos da seção certificados (o restante está no arquivo slider.css) */
+section#certificates > p {
+    margin: 0 10%;
 }
 
 /* Estilos da seção projetos */
@@ -285,4 +293,44 @@ img.mail-lg,
 img.linkedin-lg {
     width: 4%;
     margin-right: 1vw;
+}
+
+/* Estilos da caixa gostos pessoais */
+div.btn-personal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+div.personal-tastes {
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+div.personal-taste {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.personal-taste > img {
+    width: 26%;
+}
+
+@media (min-width: 767.98px) { 
+    div.personal-tastes {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 991.98px) { 
+    div.personal-tastes {
+        gap: 10%;
+    }
 }

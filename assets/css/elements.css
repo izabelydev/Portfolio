@@ -10,7 +10,6 @@ body, html {
     height: 100dvh;
     background: var(--white-df);
     overflow-x: hidden;
-    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -28,7 +27,11 @@ header, section#projects {
 section {
     text-align: center;
     width: 100%;
-    padding: 12% 0;
+    padding: 7% 0 10%;
+}
+
+h1 {
+    text-align: center;
 }
 
 ul {
