@@ -6,8 +6,7 @@ function createProject(img, imgAlt, url, title, description) {
                 <img class="img-project" src="${img}" alt="${imgAlt}">
                 <a class="title-project" href="${url}" target="_blank">${title}</a>
                 <p class="description-project">${description}</p>
-            </div>
-        `;
+            </div>`;
 }
 
 createProject(
@@ -65,4 +64,4 @@ createProject(
     "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/fundamentosJS/tarifa",
     "Ingresso",
     "Escolher o tipo de ingresso e aplicar o desconto."
-).project();
+);
