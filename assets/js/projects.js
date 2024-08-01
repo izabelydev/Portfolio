@@ -12,13 +12,12 @@ function createProject(img, imgAlt, url, title, description) {
         `;
         }
     };
-
 }
 
 createProject(
     "./assets/img/area-perímetro.jpeg", 
     "Calcular área e perímetro", 
-    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/areaEperimetro", 
+    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/fundamentosJS/areaEperimetro", 
     "Calcular área e perímetro", 
     "Formulário dinâmico para calcular a área e o perímetro de um retângulo."
 ).project();
@@ -34,7 +33,7 @@ createProject(
 createProject(
     "./assets/img/temperatura.jpeg", 
     "Conversor de temperatura", 
-    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/temperatura", 
+    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/fundamentosJS/temperatura", 
     "Conversor de temperatura", 
     "Conversor de graus Celsius para Fahrenheit e vice-versa."
 ).project();
@@ -42,7 +41,7 @@ createProject(
 createProject(
     "./assets/img/divisibilidade.jpeg", 
     "Divisibilidade", 
-    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios//checarDivisibilidade", 
+    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/fundamentosJS/checarDivisibilidade", 
     "Divisibilidade", 
     "Checar se um número é divisível pelo outro e mostrar o resultado."
 ).project();
@@ -50,7 +49,7 @@ createProject(
 createProject(
     "./assets/img/faixa-etaria.jpeg", 
     "Faixa etária", 
-    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/faixaEtaria", 
+    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/fundamentosJS/faixaEtaria", 
     "Faixa etária", 
     "Classificar a idade: criança, adolescente, adulto, idoso."
 ).project();
@@ -58,7 +57,7 @@ createProject(
 createProject(
     "./assets/img/formulario-dinamico.jpeg", 
     "Formulário dinâmico", 
-    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/concatenarStrings", 
+    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/fundamentosJS/concatenarStrings", 
     "Formulário dinâmico ", 
     "Formulário responsivo com animações e resposta dinâmica."
 ).project();
@@ -67,7 +66,7 @@ createProject(
 createProject(
     "./assets/img/ingresso.jpeg", 
     "Ingresso", 
-    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/tarifa", 
+    "https://github.com/izabelydev/javascript-aulas/tree/main/Desafios/fundamentosJS/tarifa", 
     "Ingresso", 
     "Escolher o tipo de ingresso e aplicar o desconto."
 ).project();
